@@ -2,7 +2,7 @@
 
 **Ecosistema de Inteligencia Artificial Local (Llama-3 8B) para gestión de infraestructura urbana.**
 
-**Nombre: Msc. Yanet Cesaire Velazquez**
+**Desarrollado por: Msc. Yanet Cesaire Velazquez**
 
 ## 📂 Documentación Técnica
 
