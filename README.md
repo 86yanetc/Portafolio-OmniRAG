@@ -92,3 +92,9 @@ Embeddings: HuggingFace / sentence-transformers
 He diseñado un dashboard interactivo utilizando **Streamlit** que permite al operador de la SmartCity alternar entre los 10 agentes RAG de forma fluida.
 
 ![INTERFAZ 1](./imagenes/RAG_Mutlimodal1_OK.png)
+
+![INTERFAZ 2](./imagenes/RAG_Mutlimodal2_OK.png)
+
+![INTERFAZ 3](./imagenes/RAG_Mutlimodal3_OK.png)
+
+![INTERFAZ 4](./imagenes/RAG_Mutlimodal4_OK.png)
