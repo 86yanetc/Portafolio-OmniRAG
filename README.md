@@ -10,7 +10,7 @@ Para conocer los detalles de arquitectura, desafíos técnicos superados (rutas,
 
 👉 [**Descargar Informe Técnico Completo (PDF)**](./documentos/Informe_Tecnico.pdf)
 
-*Nota: Este repositorio es un portafolio de arquitectura y diseño de sistemas de IA. El código fuente es de propiedad privada.*
+*Nota: Este repositorio es un portafolio de arquitectura y diseño de sistemas de IA. El código fuente es de propiedad privada de la autora.*
 
 Este proyecto es un caso de estudio sobre la implementación de **10 estrategias avanzadas de RAG** (Recuperación Aumentada por Generación) para resolver problemas complejos de una Ciudad Inteligente.
 
@@ -36,7 +36,7 @@ Este proyecto es un caso de estudio sobre la implementación de **10 estrategias
 
 9. **RAG Adaptativo:** Clasificador de intención (Nivel 1 vs Nivel 2).
 
-10. **Benchmarking PDF:** Pruebas de estrés con documentos de +200 páginas.
+10. **Benchmarking PDF:** Pruebas de estrés con documentos de +200 páginas (Usamos en la comparación **ChromaDB  y Faiss**).
 
 Esta arquitectura representa un sistema de IA de Grado Industrial. Se basa en el desacoplamiento de responsabilidades: el **Frontend** gestiona la experiencia,el **Backend** orquesta la lógica, y los **Engines** ejecutan las estrategias específicas de RAG.
 
@@ -90,6 +90,8 @@ Un servicio especializado en el análisis de rendimiento. Captura las latencias 
 ## 🖥️ Prototipo de Interfaz
 
 He diseñado un dashboard interactivo utilizando **Streamlit** que permite al operador de la SmartCity alternar entre los 10 agentes RAG de forma fluida.
+
+**Ejemplo: RAG Multimodal**
 
 ![INTERFAZ 1](./imagenes/1_OK.png)
 
