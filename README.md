@@ -53,7 +53,7 @@ A continuación se detalla la organización modular de los microservicios y base
 
 ## 🌐 Microservicios con FastAPI: El Cerebro del Sistema
 
-En este proyecto, FastAPI actúa como la capa de backend de alto rendimiento, encargada de gestionar la lógica de los 10 agentes RAG de forma modular. Sus principales funciones son:
+En este proyecto, **FastAPI** actúa como la capa de backend de alto rendimiento, encargada de gestionar la lógica de los 10 agentes RAG de forma modular. Sus principales funciones son:
 
 **1. Orquestación Agéntica (Inference Engine)**
 
@@ -65,7 +65,7 @@ Implementa la lógica del RAG Adaptativo y Distribuido. Este componente analiza 
 
 **3. Procesamiento Multimodal y Visión**
 
-Este microservicio integra el modelo de visión BLIP. Se encarga de la ingesta de imágenes, la extracción de metadatos técnicos y la conversión de píxeles a descripciones textuales que luego son indexadas en la base de datos vectorial para su búsqueda por lenguaje natural.
+Este microservicio integra el modelo de **visión BLIP**. Se encarga de la ingesta de imágenes, la extracción de metadatos técnicos y la conversión de píxeles a descripciones textuales que luego son indexadas en la base de datos vectorial para su búsqueda por lenguaje natural.
 
 **4. Gestión de Persistencia y Memoria (State Management)**
 
@@ -90,6 +90,8 @@ Un servicio especializado en el análisis de rendimiento. Captura las latencias 
 **Interfaz: Streamlit (Custom CSS)**
 
 **Embeddings: HuggingFace / sentence-transformers**
+
+**Lenguaje de Programación: Python**
 
 ## 🖥️ Prototipo de Interfaz
 
