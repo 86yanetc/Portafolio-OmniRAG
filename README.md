@@ -47,7 +47,7 @@ ecosistema de **Hugging Face (Transformers, Datasets, Inference API)**.
 
 ![DIRECTORIO](./imagenes/Directorio.png)
 
-🌐 Microservicios con FastAPI: El Cerebro del Sistema
+## 🌐 Microservicios con FastAPI: El Cerebro del Sistema
 
 En este proyecto, FastAPI actúa como la capa de backend de alto rendimiento, encargada de gestionar la lógica de los 10 agentes RAG de forma modular. Sus principales funciones son:
 
@@ -72,3 +72,23 @@ Responsable de la conexión con SQLite y archivos de Feedback. Este servicio ase
 Un servicio especializado en el análisis de rendimiento. Captura las latencias de búsqueda (Retrieval) y de generación (LLM) de motores como FAISS y ChromaDB, exponiendo estos datos a través de endpoints específicos para su visualización técnica en el dashboard.
 
 ![MICROSERVICIO](./imagenes/Microservicios.png)
+
+## 🛠️ Stack Tecnológico
+
+LLM: Llama-3 8B (Local/Quantized)
+
+Orquestación: FastAPI & LangChain
+
+Bases de Datos: FAISS, ChromaDB, SQLite
+
+Visión: BLIP (Salesforce)
+
+Interfaz: Streamlit (Custom CSS)
+
+Embeddings: HuggingFace / sentence-transformers
+
+## 🖥️ Prototipo de Interfaz
+
+He diseñado un dashboard interactivo utilizando **Streamlit** que permite al operador de la SmartCity alternar entre los 10 agentes RAG de forma fluida.
+
+![INTERFAZ 1](./imagenes/RAG_Mutlimodal1_OK.png)
