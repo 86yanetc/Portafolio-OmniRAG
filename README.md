@@ -49,17 +49,7 @@ Todo orquestado por FastAPI y visualizado con Streamlit, utilizando exclusivamen
 
 A continuación se detalla la organización modular de los microservicios y bases de datos:
 
-📂 app/
- ┣ 📂 api/          # Endpoints de FastAPI
- ┣ 📂 services/     # Lógica de los 10 agentes RAG
- ┣ 📂 core/         # Configuraciones globales
-📂 data/
- ┣ 📂 corpus/       # Manuales técnicos JSON
- ┣ 📂 imagenes/     # Evidencias para Multimodal
- ┗ 📂 silos/        # Datos regionales (TXT)
-📂 storage/          # Persistencia FAISS y SQLite
-
-![DIRECTORIO](./imagenes/Directorio.png)
+![DIRECTORIO](./imagenes/1_Directorio.png)
 
 ## 🌐 Microservicios con FastAPI: El Cerebro del Sistema
 
