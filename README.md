@@ -6,7 +6,7 @@
 
 ## 📂 Documentación Técnica
 
-Para conocer los detalles de arquitectura, desafíos técnicos superados (rutas, amnesia de IA, codificación) y comparativas de rendimiento:
+Para conocer los detalles de arquitectura, desafíos técnicos superados y comparativas de rendimiento:
 
 👉 [**Descargar Informe Técnico Completo (PDF)**](./documentos/Informe_Tecnico.pdf)
 
