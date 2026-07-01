@@ -75,17 +75,17 @@ Un servicio especializado en el análisis de rendimiento. Captura las latencias 
 
 ## 🛠️ Stack Tecnológico
 
-LLM: Llama-3 8B (Local/Quantized)
+**LLM: Llama-3 8B (Local/Quantized)**
 
-Orquestación: FastAPI & LangChain
+**Orquestación: FastAPI & LangChain**
 
-Bases de Datos: FAISS, ChromaDB, SQLite
+**Bases de Datos: FAISS, ChromaDB, SQLite**
 
-Visión: BLIP (Salesforce)
+**Visión: BLIP (Salesforce)**
 
-Interfaz: Streamlit (Custom CSS)
+**Interfaz: Streamlit (Custom CSS)**
 
-Embeddings: HuggingFace / sentence-transformers
+**Embeddings: HuggingFace / sentence-transformers**
 
 ## 🖥️ Prototipo de Interfaz
 
