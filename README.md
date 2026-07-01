@@ -38,7 +38,6 @@ Este proyecto es un caso de estudio sobre la implementación de **10 estrategias
 
 10. **Benchmarking PDF:** Pruebas de estrés con documentos de +200 páginas (Usamos en la comparación **ChromaDB  y Faiss**).
 
-
 ## 🎨 Diseño de Arquitectura 
 
 Esta arquitectura representa un sistema de IA de Grado Industrial. Se basa en el desacoplamiento de responsabilidades: el **Frontend** gestiona la experiencia, el **Backend** orquesta la lógica, y los **Engines** ejecutan las estrategias específicas de RAG.
@@ -46,7 +45,19 @@ Todo orquestado por FastAPI y visualizado con Streamlit, utilizando exclusivamen
 
 ![ARQUITECTURA DEL SISTEMA](./imagenes/Arquitecto_Sistema.png)
 
-Se muestra el directorio de las carpetas
+## 🌲 Estructura del Directorio
+
+A continuación se detalla la organización modular de los microservicios y bases de datos:
+
+📂 app/
+ ┣ 📂 api/          # Endpoints de FastAPI
+ ┣ 📂 services/     # Lógica de los 10 agentes RAG
+ ┣ 📂 core/         # Configuraciones globales
+📂 data/
+ ┣ 📂 corpus/       # Manuales técnicos JSON
+ ┣ 📂 imagenes/     # Evidencias para Multimodal
+ ┗ 📂 silos/        # Datos regionales (TXT)
+📂 storage/          # Persistencia FAISS y SQLite
 
 ![DIRECTORIO](./imagenes/Directorio.png)
 
