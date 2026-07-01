@@ -91,12 +91,22 @@ Un servicio especializado en el análisis de rendimiento. Captura las latencias 
 
 He diseñado un dashboard interactivo utilizando **Streamlit** que permite al operador de la SmartCity alternar entre los 10 agentes RAG de forma fluida.
 
-**Ejemplo: RAG Multimodal**
+**Ejemplos: RAG Multimodal**
 
-![INTERFAZ 1](./imagenes/1_OK.png)
+![INTERFAZ 1](./imagenes/2_OK.png)
 
-![INTERFAZ 2](./imagenes/2_OK.png)
+![INTERFAZ 2](./imagenes/3_OK.png)
 
-![INTERFAZ 3](./imagenes/3_OK.png)
+![INTERFAZ 3](./imagenes/4_OK.png)
 
-![INTERFAZ 4](./imagenes/4_OK.png)
+**Ejemplos: RAG con Retroalimentación (Feedback)**
+
+El sistema genera una respuesta con Llama 8B y permite que el usuario la vote (👍/👎).
+
+![FEEDBACK 1](./imagenes/1_FeedBack.png)
+
+![FEEDBACK 2](./imagenes/2_FeedBack.png)
+
+**Ejemplos: RAG con Híbrida**
+
+![FEEDBACK 1](./imagenes/1_Hibrido.png)
