@@ -43,9 +43,6 @@ Este proyecto es un caso de estudio sobre la implementación de **10 estrategias
 Esta arquitectura representa un sistema de IA de Grado Industrial. Se basa en el desacoplamiento de responsabilidades: el **Frontend** gestiona la experiencia, el **Backend** orquesta la lógica, y los **Engines** ejecutan las estrategias específicas de RAG.
 Todo orquestado por FastAPI y visualizado con Streamlit, utilizando exclusivamente el ecosistema de **Hugging Face (Transformers, Datasets, Inference API)**.
 
-![ARQUITECTURA DEL SISTEMA](./imagenes/Arquitecto_Sistema.png)
-
-'''
 graph TD
     classDef frontend fill:#E1F5FE,stroke:#01579B,stroke-width:2px,color:#000
     classDef backend fill:#F5F5F5,stroke:#424242,stroke-width:2px,color:#000
@@ -53,7 +50,7 @@ graph TD
     classDef models fill:#FFF9C4,stroke:#FBC02D,stroke-width:2px,color:#000
     classDef storage fill:#FFEBEE,stroke:#C62828,stroke-width:2px,color:#000
 
-    subgraph UI [🖥️ CAPA DE PRESENTACIÓN]
+    subgraph UI ["🖥️ CAPA DE PRESENTACIÓN"]
         A[Streamlit Dashboard]
         A1[Métricas de Latencia]
         A2[Interfaz de Chat]
@@ -61,7 +58,7 @@ graph TD
     end
     class A,A1,A2,A3 frontend
 
-    subgraph Backend [⚙️ BACKEND - FASTAPI]
+    subgraph Backend ["⚙️ BACKEND - FASTAPI"]
         B{Orquestador OmniRAG}
         B1[Clasificador Adaptativo]
         B2[Router Regional de Silos]
@@ -69,7 +66,7 @@ graph TD
     end
     class B,B1,B2,B3 backend
 
-    subgraph Agents [🧠 LÓGICA DE AGENTES]
+    subgraph Agents ["🧠 LÓGICA DE AGENTES"]
         C1[Búsqueda Híbrida]
         C2[Motor Jerárquico]
         C3[Agente Visual Multimodal]
@@ -78,16 +75,16 @@ graph TD
     end
     class C1,C2,C3,C4,C5 agent
 
-    subgraph AI_Models [🤖 MODELOS DE IA LOCAL]
+    subgraph AI_Models ["🤖 MODELOS DE IA LOCAL"]
         D1[Llama-3 8B GGUF]
         D2[BLIP Vision Model]
         D3[HuggingFace Embeddings]
     end
     class D1,D2,D3 models
 
-    subgraph Data [💾 PERSISTENCIA Y DATOS]
-        E1[(FAISS / ChromaDB)]
-        E2[(SQLite - Historial)]
+    subgraph Data ["💾 PERSISTENCIA Y DATOS"]
+        E1["(FAISS / ChromaDB)"]
+        E2["(SQLite - Historial)"]
         E3[CSV - Feedback DB]
         E4[Silos: EU / AS / AM]
         E5[PDF / JSON Master]
@@ -101,14 +98,21 @@ graph TD
     B1 -->|Enrutamiento| C1
     B --> B2
     B2 -->|Filtro| E4
-    
-    C1 & C2 & C4 -->|Búsqueda| E1
+
+    C1 -->|Búsqueda| E1
+    C2 -->|Búsqueda| E1
+    C4 -->|Búsqueda| E1
     C3 -->|Analizar Imagen| D2
     D2 -->|Descripción| C3
+
+    C1 -->|Prompt Contexto| D1
+    C2 -->|Prompt Contexto| D1
+    C3 -->|Prompt Contexto| D1
+    C4 -->|Prompt Contexto| D1
+    C5 -->|Prompt Contexto| D1
     
-    Agents -->|Prompt Contexto| D1
     D3 -->|Vectores| E1
-    
+
     D1 -->|Respuesta Final| A
     E1 -->|Contexto Técnico| D1
     C4 -->|Guardar| E3
@@ -118,7 +122,7 @@ graph TD
     style Agents fill:#FFFFFF,stroke:#333,stroke-dasharray: 5 5
     style AI_Models fill:#FFFFFF,stroke:#333,stroke-dasharray: 5 5
     style Data fill:#FFFFFF,stroke:#333,stroke-dasharray: 5 5
-'''
+
 
 ## 🌲 Estructura del Directorio
 
