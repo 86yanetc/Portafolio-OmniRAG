@@ -45,6 +45,84 @@ Todo orquestado por FastAPI y visualizado con Streamlit, utilizando exclusivamen
 
 ![ARQUITECTURA DEL SISTEMA](./imagenes/Arquitecto_Sistema.png)
 
+graph TD
+    %% Configuración de Colores y Estilos (Tema Claro)
+    classDef frontend fill:#E1F5FE,stroke:#01579B,stroke-width:2px,color:#000
+    classDef backend fill:#F5F5F5,stroke:#424242,stroke-width:2px,color:#000
+    classDef agent fill:#E8F5E9,stroke:#2E7D32,stroke-width:2px,color:#000
+    classDef models fill:#FFF9C4,stroke:#FBC02D,stroke-width:2px,color:#000
+    classDef storage fill:#FFEBEE,stroke:#C62828,stroke-width:2px,color:#000
+
+    %% Capa de Interfaz
+    subgraph UI [🖥️ CAPA DE PRESENTACIÓN]
+        A[Streamlit Dashboard]
+        A1[Métricas de Latencia]
+        A2[Interfaz de Chat]
+        A3[Visor de Imágenes]
+    end
+    class A,A1,A2,A3 frontend
+
+    %% Capa de Orquestación
+    subgraph Backend [⚙️ backend - FastAPI]
+        B{Orquestador OmniRAG}
+        B1[Clasificador Adaptativo]
+        B2[Router Regional de Silos]
+        B3[Middleware de Memoria]
+    end
+    class B,B1,B2,B3 backend
+
+    %% Inteligencia Agéntica
+    subgraph Agents [🧠 LÓGICA DE AGENTES]
+        C1[Búsqueda Híbrida]
+        C2[Motor Jerárquico]
+        C3[Agente Visual Multimodal]
+        C4[Capa de Aprendizaje/Feedback]
+        C5[Módulo de Benchmarking]
+    end
+    class C1,C2,C3,C4,C5 agent
+
+    %% Capa de Inferencia
+    subgraph AI_Models [🤖 MODELOS DE IA LOCAL]
+        D1[Llama-3 8B GGUF]
+        D2[BLIP Vision Model]
+        D3[HuggingFace Embeddings]
+    end
+    class D1,D2,D3 models
+
+    %% Capa de Datos
+    subgraph Data [💾 PERSISTENCIA Y DATOS]
+        E1[(FAISS / ChromaDB)]
+        E2[(SQLite - Historial)]
+        E3[CSV - Feedback DB]
+        E4[Silos: EU / AS / AM]
+        E5[PDF / JSON Master]
+    end
+    class E1,E2,E3,E4,E5 storage
+
+    %% Conexiones
+    A -->|Consulta HTTP| B
+    B --> B3 -->|Consulta Historial| E2
+    B --> B1 -->|Nivel de Complejidad| C1
+    B --> B2 -->|Filtro de Región| E4
+    
+    C1 & C2 & C4 -->|Búsqueda Vectorial| E1
+    C3 -->|Procesar Imagen| D2
+    D2 -->|Descripción Texto| C3
+    
+    Agents -->|Prompt de Contexto| D1
+    D3 -->|Generar Vectores| E1
+    
+    D1 -->|Respuesta Final| A
+    E1 -->|Contexto Técnico| D1
+    C4 -->|Guardar Corrección| E3
+
+    %% Ajustes de los Subgrafos (Fondos Claros)
+    style UI fill:#FFFFFF,stroke:#333,stroke-dasharray: 5 5
+    style Backend fill:#FFFFFF,stroke:#333,stroke-dasharray: 5 5
+    style Agents fill:#FFFFFF,stroke:#333,stroke-dasharray: 5 5
+    style AI_Models fill:#FFFFFF,stroke:#333,stroke-dasharray: 5 5
+    style Data fill:#FFFFFF,stroke:#333,stroke-dasharray: 5 5
+
 ## 🌲 Estructura del Directorio
 
 A continuación se detalla la organización modular de los microservicios y bases de datos:
