@@ -43,6 +43,7 @@ Este proyecto es un caso de estudio sobre la implementación de **10 estrategias
 Esta arquitectura representa un sistema de IA de Grado Industrial. Se basa en el desacoplamiento de responsabilidades: el **Frontend** gestiona la experiencia, el **Backend** orquesta la lógica, y los **Engines** ejecutan las estrategias específicas de RAG.
 Todo orquestado por FastAPI y visualizado con Streamlit, utilizando exclusivamente el ecosistema de **Hugging Face (Transformers, Datasets, Inference API)**.
 
+```mermaid
 graph TD
     classDef frontend fill:#E1F5FE,stroke:#01579B,stroke-width:2px,color:#000
     classDef backend fill:#F5F5F5,stroke:#424242,stroke-width:2px,color:#000
@@ -122,7 +123,7 @@ graph TD
     style Agents fill:#FFFFFF,stroke:#333,stroke-dasharray: 5 5
     style AI_Models fill:#FFFFFF,stroke:#333,stroke-dasharray: 5 5
     style Data fill:#FFFFFF,stroke:#333,stroke-dasharray: 5 5
-
+```
 
 ## 🌲 Estructura del Directorio
 
