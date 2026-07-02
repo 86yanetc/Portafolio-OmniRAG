@@ -3,7 +3,7 @@
 **Ecosistema de Inteligencia Artificial Local (Llama-3 8B) para gestión de infraestructura urbana.**
 
 <div align="right">
-  <ins>"Donde el dato se convierte en decisión: Un ecosistema agéntico diseñado para que las ciudades no solo procesen información, sino que aprendan, vean y recuerden"</ins>
+  <em>"Donde el dato se convierte en decisión: Un ecosistema agéntico diseñado para que las ciudades no solo procesen información, sino que aprendan, vean y recuerden"</em>
 </div>
 
 
