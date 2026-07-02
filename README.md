@@ -12,7 +12,7 @@ Para conocer los detalles de arquitectura, desafíos técnicos superados y compa
 
 *Nota: Este repositorio es un portafolio de arquitectura y diseño de sistemas de IA. El código fuente es de propiedad privada de la autora.*
 
-Este proyecto es un caso de estudio sobre la implementación de **10 estrategias avanzadas de RAG (Recuperación Aumentada por Generación)** para resolver problemas complejos de una Ciudad Inteligente.
+Este proyecto es un caso de estudio sobre la implementación de **10 estrategias avanzadas de RAG (Recuperación Aumentada por Generación)** para resolver problemas complejos de una **"Ciudad Inteligente"**.
 
 ![9 ARQUITECTURAS RAG](./imagenes/ArquitecturaRAG.png)
 
