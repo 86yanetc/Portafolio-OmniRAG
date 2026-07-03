@@ -22,7 +22,7 @@ Este proyecto es un caso de estudio sobre la implementación de **10 estrategias
 
 ![9 ARQUITECTURAS RAG](./imagenes/ArquitecturaRAG.png)
 
-## 🚀 Las 10 Estrategias Implementadas
+## 🛠️ Implementación Técnica: Ecosistema OmniRAG SmartCity
 
 1. **RAG Básico:** Búsqueda semántica estándar.
 
@@ -44,20 +44,17 @@ Este proyecto es un caso de estudio sobre la implementación de **10 estrategias
 
 10. **Benchmarking PDF:** Pruebas de estrés con documentos de +200 páginas (Usamos en la comparación **ChromaDB  y Faiss**).
 
-## 🏗️ Diseño de Arquitectura 
+## 🏗️  Arquitectura del Sistema: OmniRAG SmartCity  
 
-Esta arquitectura representa un sistema de IA de Grado Industrial. Se basa en el desacoplamiento de responsabilidades: el **Frontend** gestiona la experiencia, el **Backend** orquesta la lógica, y los **Engines** ejecutan las estrategias específicas de RAG.
-Todo orquestado por FastAPI y visualizado con Streamlit, utilizando exclusivamente el ecosistema de **Hugging Face (Transformers, Datasets, Inference API)**.
+El ecosistema opera bajo una filosofía de IA Agéntica Modular, donde cada componente cumple una función específica dentro de la cadena de valor del dato:
 
-**CAPA DE PRESENTACIÓN (Streamlit):** Es el punto de entrada. Gestiona no solo el texto, sino el renderizado de imágenes de evidencia y las métricas de rendimiento que el backend calcula en tiempo real.
+**Capa de Presentación (Streamlit):** Interfaz reactiva que gestiona el estado de la sesión, renderizado de telemetría (métricas de latencia) y visualización de evidencias multimodales.
 
-**CAPA DE ORQUESTACIÓN (FastAPI):** Funciona como un "Traffic Controller". Antes de buscar, pasa por el Memory Middleware (SQLite) para saber quién es el usuario y qué dijo antes. Luego, el Adaptive Gateway decide si la pregunta es simple o requiere análisis profundo.
+**Capa de Orquestación (FastAPI):** Núcleo asíncrono que actúa como "Traffic Controller", gestionando el enrutamiento inteligente, la inyección de memoria histórica y la seguridad de los endpoints.
 
-**LÓGICA AGÉNTICA:** Aquí residen tus 10 estrategias. El sistema decide qué "herramienta" de recuperación usar (Híbrida para códigos SKU, Jerárquica para manuales, o Multimodal para cámaras).
+**Capa de Inteligencia (Agentic Logic):** Conjunto de 10 estrategias RAG que procesan la información mediante lógica condicional, búsqueda híbrida y clasificación de intención.
 
-**CAPA DE INFERENCIA:** Es el motor de ejecución. Utilizamos Llama-3 8B para el razonamiento y BLIP para la visión. Todo corre localmente, asegurando privacidad y soberanía de datos.
-
-**CAPA DE DATOS:** El almacenamiento está segmentado. FAISS/ChromaDB para la velocidad de búsqueda, SQLite para la integridad de la memoria, y Silos Regionales para simular una infraestructura distribuida real.
+**Capa de Persistencia (Hybrid Storage):** Almacenamiento segmentado que utiliza FAISS para velocidad ultra-rápida, ChromaDB para gestión de metadatos y SQLite para integridad referencial del historial.
 
 ```mermaid
 graph TD
