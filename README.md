@@ -216,11 +216,25 @@ He diseñado un dashboard interactivo utilizando **Streamlit** que permite al op
 
 **Ejemplos: RAG Multimodal**
 
+Validación de la capacidad de procesamiento de evidencias visuales mediante modelos de visión (BLIP) y razonamiento textual (Llama-3).
+
+**Análisis de la Interfaz:**
+
+Este módulo representa el "ojo" del sistema. En las capturas se observa cómo el operador interactúa con una base de datos de imágenes de cámaras de seguridad. El sistema no busca por etiquetas manuales, sino por alineación semántica: el modelo BLIP genera una descripción técnica de cada imagen que luego es indexada vectorialmente.
+
+**Preguntas 1 y 2 (Inundaciones e Instalaciones):** El sistema localiza la imagen exacta (inundacion1.jpg o paneles1.jpg) analizando la acción descrita. La IA identifica correctamente a "personas caminando en el agua" o "técnicos trabajando", demostrando una comprensión profunda de la escena.
+
+**Preguntas 3 y 4 (Humo y Contaminación):** Aquí se pone a prueba el razonamiento crítico. En la pregunta 3, el sistema identifica un vehículo, pero Llama-3 es capaz de negar la presencia de humo si la descripción técnica no lo respalda. En la pregunta 4, ante una consulta más específica, el sistema localiza la evidencia de "chimeneas de humo" en el fondo de la imagen de tráfico, validando la precisión del modelo de visión.
+
+
 ![INTERFAZ 1](./imagenes/2_OK.png)
+Figura 5a: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.
 
 ![INTERFAZ 2](./imagenes/3_OK.png)
+Figura 5b: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.
 
 ![INTERFAZ 3](./imagenes/4_OK.png)
+Figura 5c: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.
 
 **Ejemplos: RAG con Retroalimentación (Feedback)**
 
