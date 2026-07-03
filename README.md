@@ -230,21 +230,33 @@ Este módulo representa el "ojo" del sistema. En las capturas se observa cómo e
 <em>Figura 1a: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.</em>
 
 ![INTERFAZ 2](./imagenes/2_OK.png)
-<em>Figura 2b: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.</em>
+<em>Figura 1b: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.</em>
 
 ![INTERFAZ 3](./imagenes/3_OK.png)
-<em>Figura 3c: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.</em>
+<em>Figura 1c: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.</em>
 
 ![INTERFAZ 4](./imagenes/4_OK.png)
-<em>Figura 4d: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.</em>
+<em>Figura 1d: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.</em>
 
-## Ejemplos: RAG con Retroalimentación (Feedback)
+## RAG con Retroalimentación: Aprendizaje Continuo y Validación de Expertos
 
-El sistema genera una respuesta con Llama 8B y permite que el usuario la vote (👍/👎).
+Validación de la capa de aprendizaje reforzado mediante la priorización de correcciones técnicas sobre la documentación base.
+
+**Análisis de la Interfaz:
+
+En estas capturas se observa la implementación de una Knowledge Correction Layer (Capa de Corrección de Conocimiento). El sistema ya no solo recupera información de los manuales, sino que audita cada consulta contra una base de datos de feedback técnico.
+
+**Detección de Errores Críticos:** Al preguntar por la limpieza de sensores, el sistema identifica que existe una "lección aprendida" en el registro histórico. En lugar de dar una respuesta genérica del manual, intercepta la consulta y entrega una advertencia de seguridad validada: "ERROR CRÍTICO: Nunca use agua".
+
+**Consistencia Lingüística:** El sistema demuestra que, independientemente de cómo se formule la pregunta (Pregunta 1 vs Pregunta 2), el motor de búsqueda léxica y semántica del feedback localiza la corrección adecuada, garantizando la seguridad operativa.
+
+**Indicadores de Confianza:** La interfaz muestra un distintivo verde (Expert Badge) que confirma al operador que la información ha sido verificada por un humano, aumentando la fiabilidad del ecosistema.
 
 ![FEEDBACK 1](./imagenes/1_FeedBack.png)
+Figura 2a: Capa de seguridad operativa. Se destaca el uso de distintivos visuales para diferenciar respuestas generadas por la IA de aquellas validadas y corregidas por personal técnico calificado.
 
 ![FEEDBACK 2](./imagenes/2_FeedBack.png)
+Figura 2b: Capa de seguridad operativa. Se destaca el uso de distintivos visuales para diferenciar respuestas generadas por la IA de aquellas validadas y corregidas por personal técnico calificado.
 
 ## Ejemplos: RAG con Híbrida
 
