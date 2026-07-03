@@ -7,7 +7,6 @@
 </div>
 
 
-
 **Desarrollado por: Msc. Yanet Cesaire Velazquez**
 
 ## 📂 Documentación Técnica
@@ -17,6 +16,24 @@ Para conocer los detalles de arquitectura, desafíos técnicos superados y compa
 👉 [**Descargar Informe Técnico Completo (PDF)**](./documentos/Informe_Tecnico.pdf)
 
 *Nota: Este repositorio es un portafolio de arquitectura y diseño de sistemas de IA. El código fuente es de propiedad privada de la autora.*
+
+## 💡 Decisiones de Ingeniería y Preguntas Clave
+
+En el desarrollo de este ecosistema, se priorizaron decisiones arquitectónicas que responden a necesidades reales del sector industrial y gubernamental. Aquí las respuestas a los pilares fundamentales del proyecto:
+
+### ¿Por qué una implementación 100% Local (On-Premise)?
+
+La elección de no utilizar APIs externas (como OpenAI o Anthropic) se basa en tres pilares estratégicos:
+
+*   **Privacidad Absoluta:** Los datos sensibles de la infraestructura urbana y seguridad ciudadana nunca salen de la red privada.
+
+*   **Cero Costo Operativo:** Eliminación de costos por token, permitiendo consultas ilimitadas sobre documentos masivos sin presupuesto variable.
+
+*   **Soberanía Tecnológica:** El sistema es resiliente y funcional incluso en entornos con conectividad nula o restringida.
+
+### ¿Cuál fue el desafío técnico más complejo?
+
+El reto principal fue la implementación de la **Persistencia Contextual (Memoria)**. Lograr que una IA pase de ser un motor de búsqueda amnésico a un asistente operativo capaz de recordar, razonar sobre el pasado y resolver correferencias mediante **SQLite**, fue el salto cualitativo que transformó una herramienta de consulta en un agente de decisión real.
 
 Este proyecto es un caso de estudio sobre la implementación de **10 estrategias avanzadas de RAG (Recuperación Aumentada por Generación)** para resolver problemas complejos de una **"Ciudad Inteligente"**.
 
