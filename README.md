@@ -13,7 +13,7 @@
 
 Para conocer los detalles de arquitectura, desafíos técnicos superados y comparativas de rendimiento:
 
-👉 [**Descargar Informe Técnico Completo (PDF)**](./documentos/Informe_Tecnico.pdf)
+👉 [**Descargar Informe Técnico Completo (PDF)**](./documentos/Informe_Tecnico_Final.pdf)
 
 *Nota: Este repositorio es un portafolio de arquitectura y diseño de sistemas de IA. El código fuente es de propiedad privada de la autora.*
 
