@@ -253,10 +253,10 @@ En estas capturas se observa la implementación de una Knowledge Correction Laye
 **Indicadores de Confianza:** La interfaz muestra un distintivo verde (Expert Badge) que confirma al operador que la información ha sido verificada por un humano, aumentando la fiabilidad del ecosistema.
 
 ![FEEDBACK 1](./imagenes/1_FeedBack.png)
-Figura 2a: Capa de seguridad operativa. Se destaca el uso de distintivos visuales para diferenciar respuestas generadas por la IA de aquellas validadas y corregidas por personal técnico calificado.
+<em>Figura 2a: Capa de seguridad operativa. Se destaca el uso de distintivos visuales para diferenciar respuestas generadas por la IA de aquellas validadas y corregidas por personal técnico calificado.</em>
 
 ![FEEDBACK 2](./imagenes/2_FeedBack.png)
-Figura 2b: Capa de seguridad operativa. Se destaca el uso de distintivos visuales para diferenciar respuestas generadas por la IA de aquellas validadas y corregidas por personal técnico calificado.
+<em>Figura 2b: Capa de seguridad operativa. Se destaca el uso de distintivos visuales para diferenciar respuestas generadas por la IA de aquellas validadas y corregidas por personal técnico calificado.</em>
 
 ## RAG Híbrido: Fusión de Búsqueda Semántica y Léxica
 
@@ -273,7 +273,12 @@ Este módulo resuelve la limitación de los modelos de lenguaje para identificar
 **Métricas de Fusión:** La interfaz muestra cómo el sistema otorga un "Scoring" especial a las coincidencias exactas, garantizando que los datos críticos de inventario siempre aparezcan en primer lugar.
 
 ![FEEDBACK 1](./imagenes/1_Hibrido.png)
-Figura 2a: Optimización de la recuperación técnica. Se destaca la visualización de resultados "Semánticos" y "Léxicos" encontrados, permitiendo al operador confiar plenamente en la exactitud de los códigos de piezas y componentes.
+<em>Figura 2a: Optimización de la recuperación técnica. Se destaca la visualización de resultados "Semánticos" y "Léxicos" encontrados, permitiendo al operador confiar plenamente en la exactitud de los códigos de piezas y componentes.</em>
 
 ![FEEDBACK 1](./imagenes/2_Hibrido.png)
-Figura 2b: Optimización de la recuperación técnica. Se destaca la visualización de resultados "Semánticos" y "Léxicos" encontrados, permitiendo al operador confiar plenamente en la exactitud de los códigos de piezas y componentes.
+<em>Figura 2b: Optimización de la recuperación técnica. Se destaca la visualización de resultados "Semánticos" y "Léxicos" encontrados, permitiendo al operador confiar plenamente en la exactitud de los códigos de piezas y componentes.</em>
+
+## 📜 Conclusión
+
+OmniRAG representa un cambio de paradigma en la implementación de RAG: pasar de simples chatbots a Agentes de Decisión con memoria y visión. Este proyecto valida que la soberanía tecnológica y el alto rendimiento no son excluyentes, permitiendo que una organización gestione documentos masivos y evidencias visuales sin depender de terceros. La arquitectura modular desarrollada está diseñada para ser escalable, resiliente y, sobre todo, útil en escenarios del mundo real donde el dato debe transformarse en una decisión inmediata y segura.
+
