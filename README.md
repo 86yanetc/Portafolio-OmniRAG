@@ -144,29 +144,36 @@ A continuación se detalla la organización modular de los microservicios y base
 
 ![DIRECTORIO](./imagenes/1_Directorio.png)
 
-## 🌐 Microservicios con FastAPI: El Cerebro del Sistema
+## 🌐 Infraestructura de Backend: Microservicios con FastAPI
 
-En este proyecto, **FastAPI** actúa como la capa de backend de alto rendimiento, encargada de gestionar la lógica de los 10 agentes RAG de forma modular. Sus principales funciones son:
+En este ecosistema, FastAPI actúa como el sistema nervioso central, orquestando de forma asíncrona la comunicación entre la interfaz de usuario y los modelos de IA locales. Su arquitectura modular se divide en cinco responsabilidades críticas:
 
-**1. Orquestación Agéntica (Inference Engine)**
+**1. Motor de Orquestación Agéntica (Inference Engine)**
 
-El microservicio central recibe las consultas del usuario y decide, mediante lógica de programación y prompts dinámicos, qué estrategia de recuperación activar (Básica, Jerárquica o Híbrida). Gestiona la comunicación directa con el modelo Llama-3 8B de forma eficiente, controlando los tiempos de generación.
+Gestiona el ciclo de vida de cada consulta, seleccionando dinámicamente la estrategia de recuperación (Básica, Jerárquica o Híbrida) mediante prompts dinámicos. Optimiza la comunicación con Llama-3 8B, garantizando una generación de texto fluida y coherente.
 
-**2. Enrutamiento Inteligente (Router Service)**
+**2. Enrutamiento Inteligente (Intelligent Router)**
 
-Implementa la lógica del RAG Adaptativo y Distribuido. Este componente analiza la intención de la pregunta y la región geográfica mencionada para dirigir la petición al silo de datos correcto (Europa, Asia, América) o al nivel de complejidad adecuado (FAQ vs. Análisis Profundo), optimizando el uso de recursos de la CPU.
+Implementa la lógica del RAG Adaptativo y Distribuido. Analiza la intención del usuario y las entidades geográficas para dirigir la petición al nivel de complejidad adecuado (FAQ vs. Análisis) o al silo regional correspondiente (Asia, Europa, América), minimizando el sobrecoste computacional en la CPU.
 
-**3. Procesamiento Multimodal y Visión**
+**3. Pipeline de Visión y Datos Multimodales**
 
-Este microservicio integra el modelo de **visión BLIP**. Se encarga de la ingesta de imágenes, la extracción de metadatos técnicos y la conversión de píxeles a descripciones textuales que luego son indexadas en la base de datos vectorial para su búsqueda por lenguaje natural.
+Responsable de la ingesta y procesamiento de datos no estructurados. Utiliza el modelo BLIP para transformar imágenes de infraestructura en reportes técnicos textuales, los cuales son indexados vectorialmente para habilitar búsquedas semánticas sobre evidencias visuales.
 
-**4. Gestión de Persistencia y Memoria (State Management)**
+**4. Gestión de Estado y Persistencia (State Management)**
 
-Responsable de la conexión con SQLite y archivos de Feedback. Este servicio asegura que cada interacción se guarde correctamente, permitiendo que la IA "recuerde" el contexto del usuario y que el sistema aprenda de las correcciones humanas mediante el procesamiento de archivos CSV en tiempo real.
+Garantiza la continuidad lógica de las interacciones mediante la integración con SQLite. Este servicio gestiona el historial de chat para eliminar la "amnesia" del modelo y procesa la capa de Feedback, permitiendo que el sistema aprenda de correcciones humanas en tiempo real.
 
-**5. API de Benchmarking y Métricas**
+**5. Servicio de Telemetría y Benchmarking**
 
-Un servicio especializado en el análisis de rendimiento. Captura las latencias de búsqueda (Retrieval) y de generación (LLM) de motores como FAISS y ChromaDB, exponiendo estos datos a través de endpoints específicos para su visualización técnica en el dashboard.
+Microservicio especializado en observabilidad. Captura y expone métricas de latencia granular — diferenciando tiempos de Retrieval (FAISS/ChromaDB) y de Generación (LLM) — para su análisis comparativo de rendimiento en el panel de control.
+
+**✨ Beneficios de la implementación:**
+
+**Asincronía Total:** Manejo eficiente de tareas intensivas de IA sin bloquear la experiencia de usuario.
+
+**Modularidad:** Capacidad de escalar o sustituir agentes RAG de forma independiente.
+
 
 ![MICROSERVICIO](./imagenes/Microservicios.png)
 
