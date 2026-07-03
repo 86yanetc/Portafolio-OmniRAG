@@ -258,6 +258,22 @@ Figura 2a: Capa de seguridad operativa. Se destaca el uso de distintivos visuale
 ![FEEDBACK 2](./imagenes/2_FeedBack.png)
 Figura 2b: Capa de seguridad operativa. Se destaca el uso de distintivos visuales para diferenciar respuestas generadas por la IA de aquellas validadas y corregidas por personal técnico calificado.
 
-## Ejemplos: RAG con Híbrida
+## RAG Híbrido: Fusión de Búsqueda Semántica y Léxica
+
+Validación de la precisión dual mediante la combinación de recuperación por significado (Vectores) y coincidencia exacta (Keywords).
+
+**Análisis de la Interfaz:**
+
+Este módulo resuelve la limitación de los modelos de lenguaje para identificar códigos técnicos complejos. El sistema ejecuta dos motores en paralelo: FAISS para el contexto semántico y un motor de Búsqueda Léxica para la detección de términos específicos.
+
+**Pregunta 1 (Búsqueda Léxica - SKU):** Se observa una respuesta de alta precisión para el código SKU-992-XJ. Mientras que un sistema basado solo en vectores podría confundir caracteres similares, el motor híbrido localiza el registro exacto en el inventario, identificando la válvula de titanio de forma inequívoca.
+
+**Pregunta 2 (Búsqueda Semántica - Conceptos):** El operador consulta sobre "análisis de video con IA". Aquí brilla el motor vectorial, que recupera el componente NVIDIA-JETSON-TX2 aunque el término "IA" o "Video" no sea el único identificador, entendiendo la función del hardware por encima de las palabras exactas.
+
+**Métricas de Fusión:** La interfaz muestra cómo el sistema otorga un "Scoring" especial a las coincidencias exactas, garantizando que los datos críticos de inventario siempre aparezcan en primer lugar.
 
 ![FEEDBACK 1](./imagenes/1_Hibrido.png)
+Figura 2a: Optimización de la recuperación técnica. Se destaca la visualización de resultados "Semánticos" y "Léxicos" encontrados, permitiendo al operador confiar plenamente en la exactitud de los códigos de piezas y componentes.
+
+![FEEDBACK 1](./imagenes/2_Hibrido.png)
+Figura 2b: Optimización de la recuperación técnica. Se destaca la visualización de resultados "Semánticos" y "Léxicos" encontrados, permitiendo al operador confiar plenamente en la exactitud de los códigos de piezas y componentes.
