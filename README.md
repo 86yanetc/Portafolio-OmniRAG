@@ -228,13 +228,13 @@ Este módulo representa el "ojo" del sistema. En las capturas se observa cómo e
 
 
 ![INTERFAZ 1](./imagenes/2_OK.png)
-Figura 5a: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.
+<em>Figura 5a: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.</em>
 
 ![INTERFAZ 2](./imagenes/3_OK.png)
-Figura 5b: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.
+<em>Figura 5b: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.</em>
 
 ![INTERFAZ 3](./imagenes/4_OK.png)
-Figura 5c: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.
+<em>Figura 5c: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.</em>
 
 **Ejemplos: RAG con Retroalimentación (Feedback)**
 
