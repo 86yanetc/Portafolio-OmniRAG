@@ -35,9 +35,9 @@ La elección de no utilizar APIs externas (como OpenAI o Anthropic) se basa en t
 
 El reto principal fue la implementación de la **Persistencia Contextual (Memoria)**. Lograr que una IA pase de ser un motor de búsqueda amnésico a un asistente operativo capaz de recordar, razonar sobre el pasado y resolver correferencias mediante **SQLite**, fue el salto cualitativo que transformó una herramienta de consulta en un agente de decisión real.
 
-Este proyecto es un caso de estudio sobre la implementación de **10 estrategias avanzadas de RAG (Recuperación Aumentada por Generación)** para resolver problemas complejos de una **"Ciudad Inteligente"**.
-
 ![9 ARQUITECTURAS RAG](./imagenes/ArquitecturaRAG.png)
+
+Este proyecto es un caso de estudio sobre la implementación de **10 estrategias avanzadas de RAG (Recuperación Aumentada por Generación)** para resolver problemas complejos de una **"Ciudad Inteligente"**.
 
 ## 🛠️ Implementación Técnica: Ecosistema OmniRAG SmartCity
 
