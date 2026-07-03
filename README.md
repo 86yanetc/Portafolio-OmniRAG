@@ -214,7 +214,7 @@ Microservicio especializado en observabilidad. Captura y expone métricas de lat
 
 He diseñado un dashboard interactivo utilizando **Streamlit** que permite al operador de la SmartCity alternar entre los 10 agentes RAG de forma fluida.
 
-## Ejemplos: RAG Multimodal
+## RAG Multimodal: Integración de Visión Artificial y NLP
 
 Validación de la capacidad de procesamiento de evidencias visuales mediante modelos de visión (BLIP) y razonamiento textual (Llama-3).
 
@@ -224,11 +224,19 @@ Este módulo representa el "ojo" del sistema. En las capturas se observa cómo e
 
 **Preguntas 1 y 2 (Inundaciones e Instalaciones):** El sistema localiza la imagen exacta (inundacion1.jpg o paneles1.jpg) analizando la acción descrita. La IA identifica correctamente a "personas caminando en el agua" o "técnicos trabajando", demostrando una comprensión profunda de la escena.
 
-![INTERFAZ 1](./imagenes/2_OK.png)
-<em>Figura 5a: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.</em>
+**Preguntas 3 y 4 (Humo y Contaminación):** Aquí se pone a prueba el razonamiento crítico. En la pregunta 3, el sistema identifica un vehículo, pero Llama-3 es capaz de negar la presencia de humo si la descripción técnica no lo respalda. En la pregunta 4, ante una consulta más específica, el sistema localiza la evidencia de "chimeneas de humo" en el fondo de la imagen de tráfico, validando la precisión del modelo de visión.
 
-![INTERFAZ 2](./imagenes/3_OK.png)
-<em>Figura 5b: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.</em>
+![INTERFAZ 1](./imagenes/1_OK.png)
+<em>Figura 1a: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.</em>
+
+![INTERFAZ 2](./imagenes/2_OK.png)
+<em>Figura 2b: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.</em>
+
+![INTERFAZ 3](./imagenes/3_OK.png)
+<em>Figura 3c: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.</em>
+
+![INTERFAZ 4](./imagenes/4_OK.png)
+<em>Figura 4d: Análisis visual en tiempo real. La interfaz integra miniaturas de evidencia de 300px junto a la respuesta del LLM, permitiendo una validación visual inmediata por parte del operador humano.</em>
 
 ## Ejemplos: RAG con Retroalimentación (Feedback)
 
