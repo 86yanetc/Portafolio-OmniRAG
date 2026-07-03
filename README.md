@@ -242,7 +242,7 @@ Este módulo representa el "ojo" del sistema. En las capturas se observa cómo e
 
 Validación de la capa de aprendizaje reforzado mediante la priorización de correcciones técnicas sobre la documentación base.
 
-**Análisis de la Interfaz:
+**Análisis de la Interfaz:**
 
 En estas capturas se observa la implementación de una Knowledge Correction Layer (Capa de Corrección de Conocimiento). El sistema ya no solo recupera información de los manuales, sino que audita cada consulta contra una base de datos de feedback técnico.
 
